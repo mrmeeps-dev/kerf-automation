@@ -20,6 +20,8 @@ npm run build
 npm start
 ```
 
+If you see missing webpack chunks (e.g. `Cannot find module './NNN.js'`), stop the dev server, run `npm run clean`, then `npm run dev` or `npm run build` again.
+
 ## Environment
 
 Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_*` values (see comments in `.env.example`). `.env.local` is ignored by git.

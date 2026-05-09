@@ -21,6 +21,14 @@ export const site = {
       "Choose a slot below. We'll map one frustrating manual workflow and outline how to automate it.",
     backLink: "Back to home",
   },
+  contactPage: {
+    title: "Contact us",
+    description:
+      "Send a message to Kerf Automation. We respond by email—no call required.",
+    intro:
+      "Use the form below; we’ll get back to you as soon as we can.",
+    backLink: "Back to home",
+  },
   symptoms: {
     heading: "You know there is a better way. We build it.",
     subtext:
@@ -86,5 +94,6 @@ export const site = {
   footer: {
     brandName: "Kerf Automation",
     linkedInLabel: "LinkedIn",
+    contactLinkLabel: "Contact Us",
   },
 } as const;

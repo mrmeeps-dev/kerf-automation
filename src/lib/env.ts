@@ -8,6 +8,16 @@ export function getBookingPageHref(): string {
   return BOOKING_PAGE_PATH;
 }
 
+/** In-app contact form (Tally). Footer “Contact Us” links here. */
+export const CONTACT_PAGE_PATH = "/contact" as const;
+
+export function getContactPageHref(): string {
+  const raw = process.env.NEXT_PUBLIC_CONTACT_PAGE_PATH?.trim();
+  if (raw?.startsWith("/")) return raw;
+  if (raw) return `/${raw.replace(/^\/+/, "")}`;
+  return CONTACT_PAGE_PATH;
+}
+
 /** Fallback external booking URL (Cal.com, mailto) when embed cannot load or for backwards compatibility. */
 export function getBookingUrl(): string {
   return (

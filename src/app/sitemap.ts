@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { getBookingPageHref, getSiteUrl } from "@/lib/env";
+import { getBookingPageHref, getContactPageHref, getSiteUrl } from "@/lib/env";
 
 export const dynamic = "force-static";
 
@@ -19,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${base}${getContactPageHref()}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
     },
   ];
 }

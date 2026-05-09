@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { CalBookingEmbed } from "@/components/booking/CalBookingEmbed";
 import { site } from "@/content/site";
+import { getContactPageHref } from "@/lib/env";
 
 export const metadata: Metadata = {
   title: site.bookingPage.title,
@@ -32,6 +33,15 @@ export default function BookPage() {
         <div className="mt-10 w-full min-w-0">
           <CalBookingEmbed />
         </div>
+        <p className="mt-10 text-center text-sm text-muted">
+          Prefer email first?{" "}
+          <Link
+            href={getContactPageHref()}
+            className="font-semibold text-kerf-teal underline-offset-4 transition hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kerf-teal"
+          >
+            {site.footer.contactLinkLabel}
+          </Link>
+        </p>
       </div>
     </section>
   );

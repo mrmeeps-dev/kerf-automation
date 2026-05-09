@@ -35,6 +35,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* In-page nav from header (incl. /book → /#section); offset sticky header */
+#services,
+#results,
+#about {
+  scroll-margin-top: 5.5rem;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

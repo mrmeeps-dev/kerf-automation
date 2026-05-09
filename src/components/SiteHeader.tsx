@@ -24,24 +24,24 @@ export function SiteHeader() {
             aria-label="Page sections"
             className="hidden items-center gap-x-6 text-sm font-medium md:flex"
           >
-            <a
-              href="#services"
+            <Link
+              href="/#services"
               className="text-muted transition-colors hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kerf-teal"
             >
               {site.nav.services}
-            </a>
-            <a
-              href="#results"
+            </Link>
+            <Link
+              href="/#results"
               className="text-muted transition-colors hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kerf-teal"
             >
               {site.nav.results}
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href="/#about"
               className="text-muted transition-colors hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kerf-teal"
             >
               {site.nav.about}
-            </a>
+            </Link>
           </nav>
         </div>
         <Link

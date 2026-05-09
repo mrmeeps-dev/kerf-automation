@@ -13,7 +13,7 @@ export function SiteHeader() {
           <Link href="/" className="flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kerf-teal">
             {/* eslint-disable-next-line @next/next/no-img-element -- local SVG brand asset; avoids image optimizer edge cases */}
             <img
-              src="/brand/kerf_automation_logo.svg"
+              src="/brand/kerf-logo.svg"
               alt="Kerf Automation home"
               width={545}
               height={180}

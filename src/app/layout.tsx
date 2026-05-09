@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Silicon Valley operational precision for SMB workflows. We eliminate manual data entry, automate audits, and unify systems so your team gets its time back.",
   icons: {
-    icon: [{ url: "/brand/kerf_automation_favicon.svg", type: "image/svg+xml" }],
+    icon: [{ url: "/brand/kerf-favicon.svg", type: "image/svg+xml" }],
   },
   openGraph: {
     title: "Kerf Automation — Stop doing robotic work",

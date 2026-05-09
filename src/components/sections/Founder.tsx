@@ -15,7 +15,7 @@ export function Founder() {
           <div className="flex justify-center md:col-span-1 md:justify-end">
             <div className="relative h-48 w-48 shrink-0 overflow-hidden rounded-full border border-border-soft shadow-md ring-1 ring-border-soft md:h-64 md:w-64">
               <Image
-                src="/brand/kyle-hamilton.jpg"
+                src="/brand/founder-kyle-hamilton.jpg"
                 alt="Kyle Hamilton, Principal Operational Engineer"
                 width={429}
                 height={484}

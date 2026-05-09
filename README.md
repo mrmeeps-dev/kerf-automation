@@ -2,6 +2,8 @@
 
 Next.js site for [Kerf Automation](https://kerfautomation.com): landing page, booking embed (`/book`), and static SEO routes.
 
+**Repository:** [github.com/mrmeeps-dev/kerf-automation](https://github.com/mrmeeps-dev/kerf-automation)
+
 ## Development
 
 ```bash

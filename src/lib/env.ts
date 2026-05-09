@@ -18,11 +18,19 @@ export function getContactPageHref(): string {
   return CONTACT_PAGE_PATH;
 }
 
+/**
+ * Public defaults when `NEXT_PUBLIC_*` is unset at build time (e.g. Cloudflare Worker
+ * runtime vars do not replace values inlined by `next build`). Override via env for
+ * staging or forks.
+ */
+const DEFAULT_BOOKING_URL = "https://cal.com/kerf-automation";
+const DEFAULT_CAL_LINK = "kerf-automation";
+
 /** Fallback external booking URL (Cal.com, mailto) when embed cannot load or for backwards compatibility. */
 export function getBookingUrl(): string {
-  return (
-    process.env.NEXT_PUBLIC_BOOKING_URL ?? "mailto:hello@kerfautomation.com"
-  );
+  const raw = process.env.NEXT_PUBLIC_BOOKING_URL?.trim();
+  if (raw) return raw;
+  return DEFAULT_BOOKING_URL;
 }
 
 const KERF_TEAL = "#49babc";
@@ -30,8 +38,9 @@ const KERF_TEAL = "#49babc";
 /**
  * Path for `@calcom/embed-react` (e.g. `your-org/process-audit`).
  * Prefer `NEXT_PUBLIC_CAL_LINK`; otherwise derived from a cal.com `NEXT_PUBLIC_BOOKING_URL`.
+ * Falls back to the public Kerf Cal slug when env is unset so CI-less builds still embed.
  */
-export function getCalLink(): string | null {
+export function getCalLink(): string {
   const explicit = process.env.NEXT_PUBLIC_CAL_LINK?.trim();
   if (explicit) {
     return explicit.replace(/^\/+|\/+$/g, "");
@@ -39,7 +48,7 @@ export function getCalLink(): string | null {
 
   const booking = process.env.NEXT_PUBLIC_BOOKING_URL?.trim() ?? "";
   if (!booking.startsWith("http")) {
-    return null;
+    return DEFAULT_CAL_LINK;
   }
 
   try {
@@ -51,13 +60,13 @@ export function getCalLink(): string | null {
       host === "cal.dev"
     ) {
       const path = url.pathname.replace(/^\/+|\/+$/g, "");
-      return path || null;
+      return path || DEFAULT_CAL_LINK;
     }
   } catch {
-    return null;
+    return DEFAULT_CAL_LINK;
   }
 
-  return null;
+  return DEFAULT_CAL_LINK;
 }
 
 /** Brand accent passed into Cal embed (`styles.branding.brandColor`). */

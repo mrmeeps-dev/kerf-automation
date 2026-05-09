@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# Loose camera / scratch JPEGs at repo root (not used by the Next.js app)
+/IMG_*.JPG
+
 # debug
 npm-debug.log*
 yarn-debug.log*

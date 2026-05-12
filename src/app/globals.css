@@ -38,7 +38,8 @@ html {
 /* In-page nav from header (incl. /book → /#section); offset sticky header */
 #services,
 #results,
-#about {
+#about,
+#marvel-easter-reveal {
   scroll-margin-top: 5.5rem;
 }
 

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { CfAnalytics } from "@/components/CfAnalytics";
-import { MarvelEasterEggProvider } from "@/components/MarvelEasterEgg";
+import { FoundPortraitEasterEggProvider } from "@/components/FoundPortraitEasterEggs";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getSiteUrl } from "@/lib/env";
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen flex-col antialiased`}
       >
-        <MarvelEasterEggProvider>
+        <FoundPortraitEasterEggProvider>
           <CfAnalytics />
           <a href="#main-content" className="skip-link">
             Skip to content
@@ -69,7 +69,7 @@ export default function RootLayout({
             {children}
           </main>
           <SiteFooter />
-        </MarvelEasterEggProvider>
+        </FoundPortraitEasterEggProvider>
       </body>
     </html>
   );

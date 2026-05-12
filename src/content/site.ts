@@ -69,8 +69,21 @@ export const site = {
       "Two operators. One standard for how work should feel when the systems are right.",
     bio:
       "Twenty-plus years leading People Services, HR shared services, and high-volume operations across Meta, Google, HP Enterprise, and IBM. At Meta he is People Service Delivery Manager; at Google he ran Global Ads Support for top-tier advertisers—over a million cases annually across 26 workflows—and led vendor and LATAM program management for Ads Support. Earlier roles scaled HR, payroll, and contact centers across the Americas and Europe. Bilingual English and Spanish—steady under pressure; focused on making large service operations repeatable.",
-    pitch:
+  },
+  /** Shown only after the desktop “bruno” easter egg — same invite flow as Marvel. */
+  brunoInvite: {
+    name: "Bruno Caputo",
+    sectionTagline:
+      "Two operators. One standard for how work should feel when the systems are right.",
+    bio:
+      "As a Principal Operational Engineer, Bruno leads People Service intake and transformation at Meta—turning messy employee-facing workflows into programs that scale cleanly. Before Meta he was Director of Product and Director of Large Area Coating Technology at NEXT Energy Technologies, taking complex thin-film hardware from R&D through commercialization with engineering teams he built over many years. M.S. Chemistry and B.S. Physics (UCSB, James Madison); known for rigor, stakeholder alignment, and shipping systems people rely on daily.",
+  },
+  /** Copy when any founder-portrait easter egg is active (Marvel and/or Bruno). */
+  founderEasterEgg: {
+    joinPitch:
       "Kerf is a small shop building serious automation for real businesses—not decks, not hype. If you want end-to-end ownership, sharp execution, and the kind of craft that shows up in the product, we’d love to explore building this with you.",
+    taglineThree:
+      "Three operators. One standard for how work should feel when the systems are right.",
   },
   operationalRoi: {
     heading: "Proven Operational ROI",

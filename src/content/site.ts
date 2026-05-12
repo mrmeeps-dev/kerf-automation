@@ -62,6 +62,17 @@ export const site = {
     signatureName: "Kyle Hamilton",
     signatureRole: "Principal Operational Engineer",
   },
+  /** Shown only after the desktop “marvel” easter egg — pitch to join Kerf. */
+  marvelInvite: {
+    name: "Marvel Matarrita",
+    sectionTagline:
+      "Two operators. One standard for how work should feel when the systems are right.",
+    bio:
+      "Operations-minded and relentless on follow-through—Marvel turns fuzzy handoffs into clear owners, timelines, and outcomes. He’s the person teams trust when the work is cross-functional, high-stakes, and can’t afford to slip through the cracks.",
+    pitch:
+      "Kerf is a small shop building serious automation for real businesses—not decks, not hype. If you want end-to-end ownership, sharp execution, and the kind of craft that shows up in the product, we’d love to explore building this with you.",
+    linkedInLabel: "LinkedIn →",
+  },
   operationalRoi: {
     heading: "Proven Operational ROI",
     results: [

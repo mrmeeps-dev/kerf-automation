@@ -76,11 +76,11 @@ export function Founder() {
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-muted md:text-lg">
                   {site.marvelInvite.bio}
                 </p>
-                <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-foreground md:text-lg">
-                  {site.marvelInvite.pitch}
-                </p>
               </motion.article>
             </div>
+            <p className="mx-auto mt-12 max-w-3xl border-t border-border-soft pt-10 text-center text-base font-medium leading-relaxed text-foreground md:text-lg">
+              {site.marvelInvite.pitch}
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-3 md:gap-12 lg:gap-16">

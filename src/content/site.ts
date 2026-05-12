@@ -68,7 +68,7 @@ export const site = {
     sectionTagline:
       "Two operators. One standard for how work should feel when the systems are right.",
     bio:
-      "Twenty-plus years leading People Services, HR shared services, and high-volume operations across Meta, Google, HP Enterprise, and IBM—globally. At Meta he is People Service Delivery Manager; at Google he led Global Ads Support Operations for top-tier advertisers (over a million customer cases per year across 26 workflows) and built vendor and LATAM program management for Ads Support Customer Care. Earlier roles scaled HR, payroll, and contact-center delivery across the Americas and Europe. Bilingual English and Spanish; known for steady leadership in complex, cross-functional environments and turning large service operations into repeatable systems.",
+      "Twenty-plus years leading People Services, HR shared services, and high-volume operations across Meta, Google, HP Enterprise, and IBM. At Meta he is People Service Delivery Manager; at Google he ran Global Ads Support for top-tier advertisers—over a million cases annually across 26 workflows—and led vendor and LATAM program management for Ads Support. Earlier roles scaled HR, payroll, and contact centers across the Americas and Europe. Bilingual English and Spanish—steady under pressure; focused on making large service operations repeatable.",
     pitch:
       "Kerf is a small shop building serious automation for real businesses—not decks, not hype. If you want end-to-end ownership, sharp execution, and the kind of craft that shows up in the product, we’d love to explore building this with you.",
   },

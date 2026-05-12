@@ -8,8 +8,6 @@ import { site } from "@/content/site";
 
 import { SectionReveal } from "../SectionReveal";
 
-const MARVEL_LINKEDIN = "https://www.linkedin.com/in/marvelcrc/";
-
 export function Founder() {
   const { revealed } = useMarvelEasterEgg();
   const reduceMotion = useReducedMotion();
@@ -61,7 +59,7 @@ export function Founder() {
                 <div className="relative h-48 w-48 shrink-0 overflow-hidden rounded-full border border-border-soft shadow-md ring-1 ring-border-soft md:h-56 md:w-56">
                   <Image
                     src="/brand/1719853443904.jpeg"
-                    alt={site.marvelInvite.name}
+                    alt={`${site.marvelInvite.name}, ${site.founder.signatureRole}`}
                     width={800}
                     height={800}
                     className="h-full w-full object-cover object-center"
@@ -69,18 +67,11 @@ export function Founder() {
                     priority={false}
                   />
                 </div>
-                <div className="mt-3 flex flex-col items-center gap-1 lg:items-start">
+                <div className="mt-3 flex flex-col items-center gap-0.5 lg:items-start">
                   <p className="text-sm font-semibold text-foreground">
                     {site.marvelInvite.name}
                   </p>
-                  <a
-                    href={MARVEL_LINKEDIN}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-kerf-teal underline-offset-4 transition hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kerf-teal"
-                  >
-                    {site.marvelInvite.linkedInLabel}
-                  </a>
+                  <p className="text-sm text-muted">{site.founder.signatureRole}</p>
                 </div>
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-muted md:text-lg">
                   {site.marvelInvite.bio}

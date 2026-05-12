@@ -68,10 +68,9 @@ export const site = {
     sectionTagline:
       "Two operators. One standard for how work should feel when the systems are right.",
     bio:
-      "Operations-minded and relentless on follow-through—Marvel turns fuzzy handoffs into clear owners, timelines, and outcomes. He’s the person teams trust when the work is cross-functional, high-stakes, and can’t afford to slip through the cracks.",
+      "Twenty-plus years leading People Services, HR shared services, and high-volume operations across Meta, Google, HP Enterprise, and IBM—globally. At Meta he is People Service Delivery Manager; at Google he led Global Ads Support Operations for top-tier advertisers (over a million customer cases per year across 26 workflows) and built vendor and LATAM program management for Ads Support Customer Care. Earlier roles scaled HR, payroll, and contact-center delivery across the Americas and Europe. Bilingual English and Spanish; known for steady leadership in complex, cross-functional environments and turning large service operations into repeatable systems.",
     pitch:
       "Kerf is a small shop building serious automation for real businesses—not decks, not hype. If you want end-to-end ownership, sharp execution, and the kind of craft that shows up in the product, we’d love to explore building this with you.",
-    linkedInLabel: "LinkedIn →",
   },
   operationalRoi: {
     heading: "Proven Operational ROI",
